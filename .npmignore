@@ -1,0 +1,9 @@
+src/
+tests/
+.idea/
+.vscode/
+*.log
+*.tgz
+jest.config.js
+tsconfig.json
+postman-sync-storage/

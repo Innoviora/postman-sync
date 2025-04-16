@@ -1,0 +1,45 @@
+{
+  "name": "postman-sync",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "description": "Automatically sync public Postman collections to multiple workspaces with scheduling and change detection.",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "files": ["build"]
+  ],
+  "keywords": [
+    "postman",
+    "sync",
+    "api",
+    "collection",
+    "workspace"
+  ],
+  "author": "ffsqu9",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/Innoviora/postman-sync"
+  },
+  "bugs": {
+    "url": "https://github.com/Innoviora/postman-sync/issues"
+  },
+  "homepage": "https://github.com/Innoviora/postman-sync#readme",
+  "dependencies": {
+    "@types/node": "22.14.1",
+    "axios": "1.8.4",
+    "fast-json-patch": "3.1.1",
+    "pino": "9.6.0",
+    "pino-pretty": "13.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "29.5.14",
+    "jest": "29.7.0",
+    "ts-jest": "29.3.2",
+    "ts-node": "10.9.2",
+    "typescript": "5.8.3"
+  }
+}
